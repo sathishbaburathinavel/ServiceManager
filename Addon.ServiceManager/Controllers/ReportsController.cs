@@ -15,9 +15,17 @@ namespace Addon.ServiceManager.Controllers
 {
     public class ReportsController : ApiController
     {
-        private ReportContext db = new ReportContext();
+        private IReportAppContext db = new ReportContext();
 
-        [AllowAnonymous]
+        public ReportsController()
+        {
+
+        }
+        public ReportsController(IReportAppContext context)
+        {
+            db = context;
+        }
+
         // GET: api/Reports
         public IQueryable<Report> GetReports()
         {
@@ -51,7 +59,7 @@ namespace Addon.ServiceManager.Controllers
                 return BadRequest();
             }
 
-            db.Entry(report).State = EntityState.Modified;
+            db.MarkAsModified(report);
 
             try
             {

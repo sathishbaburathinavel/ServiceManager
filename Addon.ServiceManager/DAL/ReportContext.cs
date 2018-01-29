@@ -8,9 +8,9 @@ using System.Web;
 
 namespace Addon.ServiceManager.DAL
 {
-    public class ReportContext :DbContext
+    public class ReportContext :DbContext, IReportAppContext
     {
-        public ReportContext():base("ReportContext")
+        public ReportContext():base("ReportConnection")
         {
 
         }
@@ -19,6 +19,11 @@ namespace Addon.ServiceManager.DAL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+        }
+
+        public void MarkAsModified(Report item)
+        {
+            Entry(item).State = EntityState.Modified;
         }
     }
 }

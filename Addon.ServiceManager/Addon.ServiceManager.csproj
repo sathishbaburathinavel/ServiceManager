@@ -122,13 +122,12 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="AuthorizeAttribute.cs" />
-    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="DAL\ReportContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\IReportAppContext.cs" />
     <Compile Include="Models\Report.cs" />
     <Compile Include="MyAuthenticationServerProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
