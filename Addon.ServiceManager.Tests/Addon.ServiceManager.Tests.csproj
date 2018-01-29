@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3E1AF730-58D6-4318-B3DB-2207615C92FA}</ProjectGuid>
+    <ProjectGuid>{A91CFF95-D988-494B-A815-7FEE7C66D7CD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Addon.ServiceManager.Tests</RootNamespace>
@@ -64,7 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Addon.ServiceManager\Addon.ServiceManager.csproj">
-      <Project>{8795FFCF-D1D4-4BEE-9E25-87A8F7108A87}</Project>
+      <Project>{70250D46-2B56-4A4E-8835-074DCE4FAF9D}</Project>
       <Name>Addon.ServiceManager</Name>
     </ProjectReference>
   </ItemGroup>

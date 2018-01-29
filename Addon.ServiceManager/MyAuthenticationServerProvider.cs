@@ -5,17 +5,15 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
-using System.Web.Http;
 
 namespace Addon.ServiceManager
 {
-    public class MyAuthorizationServerProvider : OAuthAuthorizationServerProvider
+    public class MyAuthenticationServerProvider : OAuthAuthorizationServerProvider
     {
-        public override async Task GrantClientCredentials(OAuthGrantClientCredentialsContext context)
+        public override async Task ValidateClientAuthentication(OAuthValidateClientAuthenticationContext context)
         {
             context.Validated();
         }
-
         public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
             var identity = new ClaimsIdentity(context.Options.AuthenticationType);

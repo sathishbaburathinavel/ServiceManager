@@ -4,7 +4,6 @@ using System.Web.Http;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using SampleAPI2;
 
 [assembly: OwinStartup(typeof(Addon.ServiceManager.Startup))]
 
@@ -17,7 +16,7 @@ namespace Addon.ServiceManager
             // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=316888
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
 
-            var myProvider = new MyAuthorizationServerProvider();
+            var myProvider = new MyAuthenticationServerProvider();
 
             OAuthAuthorizationServerOptions options = new OAuthAuthorizationServerOptions
             {
