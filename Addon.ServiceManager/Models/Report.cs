@@ -13,7 +13,7 @@ namespace Addon.ServiceManager.Models
 
         public int BusinessId { get; set; }
 
-        public int SystemId { get; set; }
+        public string SystemId { get; set; }
 
     }
 }

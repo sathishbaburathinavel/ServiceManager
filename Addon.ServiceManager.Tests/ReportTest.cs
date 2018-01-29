@@ -71,7 +71,7 @@ namespace Addon.ServiceManager.Tests
                 Date = new DateTime(2005, 4, 1),
                 TotalAmount = 234,
                 BusinessId = 1,
-                SystemId = 1
+                SystemId = "1"
             });
             context.Reports.Add(new Report
             {
@@ -79,7 +79,7 @@ namespace Addon.ServiceManager.Tests
                 Date = new DateTime(2005, 3, 1),
                 TotalAmount = 567,
                 BusinessId = 2,
-                SystemId = 1
+                SystemId = "1"
             });
             context.Reports.Add(new Report
             {
@@ -87,7 +87,7 @@ namespace Addon.ServiceManager.Tests
                 Date = new DateTime(2005, 2, 1),
                 TotalAmount = 890,
                 BusinessId = 1,
-                SystemId = 2
+                SystemId = "2"
             });
 
             var controller = new ReportsController(context);
@@ -119,7 +119,7 @@ namespace Addon.ServiceManager.Tests
                 Date = new DateTime(2005, 1, 1),
                 TotalAmount = 5553,
                 BusinessId = 1,
-                SystemId = 1
+                SystemId = "1"
             };
         }
     }
