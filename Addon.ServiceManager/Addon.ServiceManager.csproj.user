@@ -17,6 +17,7 @@
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_DbContextTypeFullName>Addon.ServiceManager.DAL.ReportContext</WebStackScaffolding_DbContextTypeFullName>
+    <NameOfLastUsedPublishProfile>AddonServiceManager - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using Addon.ServiceManager.DAL;
+using Addon.ServiceManager.Models;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
-using Addon.ServiceManager.DAL;
-using Addon.ServiceManager.Models;
 
 namespace Addon.ServiceManager.Controllers
 {
@@ -25,7 +20,7 @@ namespace Addon.ServiceManager.Controllers
         {
             db = context;
         }
-
+        [AllowAnonymous]
         // GET: api/Reports
         public IQueryable<Report> GetReports()
         {

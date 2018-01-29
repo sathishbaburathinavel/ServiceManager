@@ -1,16 +1,12 @@
 ﻿using Addon.ServiceManager.Models;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using System.Linq;
-using System.Web;
 
 namespace Addon.ServiceManager.DAL
 {
     public class ReportContext :DbContext, IReportAppContext
     {
-        public ReportContext():base("ReportConnection")
+        public ReportContext():base("AzureConnection")
         {
 
         }

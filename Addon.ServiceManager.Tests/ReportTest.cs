@@ -1,9 +1,9 @@
-﻿using System;
-using System.Net;
-using System.Web.Http.Results;
-using Addon.ServiceManager.Controllers;
+﻿using Addon.ServiceManager.Controllers;
 using Addon.ServiceManager.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Net;
+using System.Web.Http.Results;
 
 namespace Addon.ServiceManager.Tests
 {
