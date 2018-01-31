@@ -40,6 +40,14 @@ namespace Addon.ServiceManager.Controllers
             return Ok(report);
         }
 
+        // GET: api/Reports
+        [Route("api/businessReports/1")]
+        public IQueryable<Report> GetReportsByBusinessId(int businessId)
+        {
+            return db.Reports.Where((r) => r.BusinessId.CompareTo(businessId)==0);
+        }
+
+
         // PUT: api/Reports/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PutReport(int id, Report report)

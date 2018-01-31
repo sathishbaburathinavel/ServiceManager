@@ -70,7 +70,7 @@ namespace Addon.ServiceManager.Tests
                 Id = 599,
                 Date = new DateTime(2005, 4, 1),
                 TotalAmount = 234,
-                BusinessId = 1,
+                BusinessId = "1",
                 SystemId = "1"
             });
             context.Reports.Add(new Report
@@ -78,7 +78,7 @@ namespace Addon.ServiceManager.Tests
                 Id = 699,
                 Date = new DateTime(2005, 3, 1),
                 TotalAmount = 567,
-                BusinessId = 2,
+                BusinessId = "2",
                 SystemId = "1"
             });
             context.Reports.Add(new Report
@@ -86,7 +86,7 @@ namespace Addon.ServiceManager.Tests
                 Id = 799,
                 Date = new DateTime(2005, 2, 1),
                 TotalAmount = 890,
-                BusinessId = 1,
+                BusinessId = "1",
                 SystemId = "2"
             });
 
@@ -118,7 +118,7 @@ namespace Addon.ServiceManager.Tests
                 Id = 999,
                 Date = new DateTime(2005, 1, 1),
                 TotalAmount = 5553,
-                BusinessId = 1,
+                BusinessId = "1",
                 SystemId = "1"
             };
         }
