@@ -6,6 +6,8 @@ namespace Addon.ServiceManager.DAL
 {
     public class ReportContext :DbContext, IReportAppContext
     {
+        //Use LocalConnection for Local DB connection.
+        //Use AzureConnection for Azure DB connection.
         public ReportContext():base("AzureConnection")
         {
 
